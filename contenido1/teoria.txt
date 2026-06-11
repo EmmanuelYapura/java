@@ -1,0 +1,50 @@
+La programacion orientada a objetos es la forma en que java modela entidades del mundo real como por ejemplo cliente, producto, pedido y usuario, etc.
+
+Todos estos objetos tienen estados (atributos) y comportamientos (metodos).
+
+# Que ocurre en memoria cuando ejecutamos new Usuario(...)?
+    1. Reserva memoria en el Heap
+    2. Construye el objeto
+    3. Devuelve una referencia
+
+  # Buenas practicas en el archivo usuario
+    - atributos privados
+    - constructor
+    - metodos con responsabilidad clara
+    - evitar atributos publicos
+
+
+Encapsulamiento: Consiste en proteger el estado interno del objeto
+
+  # Mala practica
+    public class Cuenta {
+        public double saldo;
+    }
+
+    Desde el main.java cualquiera podria modificar nuestro atributo
+    cuenta.saldo = -1231321;
+
+  # Buena practica
+  public class Cuenta {
+      private double saldo;
+
+      public void depositar(double monto) {
+          saldo += monto;
+      }
+
+      public double getSaldo() {
+          return saldo;
+      }
+  }
+
+  Ahora el objeto controla su estado
+
+Herencia.Persona: Permite reutilizar comportamientos entre clases
+
+ # Ejemplo: en la clase Herencia.Persona
+
+Polimorfismo: permite tratar objetos distintos de forma uniforme
+
+ # Ejemplo en el objeto perro con hacerSonido: Que sucede? Java busca hacerSonido en tiempo de ejecucion pero en el objeto real NO EN LA REFERENCIA. Esto se llama Dynamic Dispatch.
+
+Interfaces: Las interfaces definen contratos, no dicen como, dicen que debe hacerse.
