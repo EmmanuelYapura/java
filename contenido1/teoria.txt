@@ -48,3 +48,25 @@ Polimorfismo: permite tratar objetos distintos de forma uniforme
  # Ejemplo en el objeto perro con hacerSonido: Que sucede? Java busca hacerSonido en tiempo de ejecucion pero en el objeto real NO EN LA REFERENCIA. Esto se llama Dynamic Dispatch.
 
 Interfaces: Las interfaces definen contratos, no dicen como, dicen que debe hacerse.
+
+ # Ejemplo en package Interfaces y su uso en main.java
+
+Errores: reprensetan los conflictos durante ejecucion
+
+ # checked : el compilador obliga a controlarlas
+ # unchecked : heredan de RuntimeException
+
+=======================================================================================
+1. Que diferencia hay entre una interfaz y una clase abstracta?
+Nota: La definicion no es la mayor importancia, lo que interesa es saber si se vamos a entender algo como UserRepository JpaRepository / UserService UserServiceImpl
+
+2. Cuando se pregunta sobre collections, no es lo importante la teoria sino saber cuando usar cada collection, por que usar Hashset en lugar de Arraylist para buscar usuarios?
+
+3. Cuando preguntan sobre excepciones quieren saber si sabemos contruir APIs robustas por ejemplo "usuario no encontrado" debe devolver 404 Not Found y no romper toda la aplicacion.
+
+Preguntas que deberia saber luego de lo visto en codigo e investigacion por tema:
+¿Cuándo usar una interfaz y cuándo herencia?
+¿Qué diferencia hay entre Arraylist, Hashset y Hashset?
+¿Qué es el polimorfismo y cómo lo usa Spring?
+¿Qué diferencia existe entre una checked y una unchecked exception?
+¿Por qué los atributos deberían ser privados?

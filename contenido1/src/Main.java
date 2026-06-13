@@ -1,3 +1,6 @@
+import Interfaces.EmailNotificador;
+import Interfaces.Notificador;
+import Interfaces.WhatsappNotificador;
 import Polimorfismo.Animal;
 import Polimorfismo.Perro;
 
@@ -8,5 +11,11 @@ public class Main {
 
         Animal perro = new Perro();
         perro.hacerSonido();
+
+        Notificador notificador = new WhatsappNotificador();
+        notificador.enviarMensaje("Hola");
+
+        Notificador notiificador1 = new EmailNotificador();
+        notiificador1.enviarMensaje("Hola");
     }
 }
